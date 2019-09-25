@@ -41,7 +41,7 @@ docker run -it andersballegaard/theharvester -b google -d uniminuto.edu
 ```console
 docker pull adamoss/john-the-ripper
 
-docker run -it -v `pwd`/example_files/chall7.txt:/crackme.txt adamoss/john-the-ripper /crackme.txt
+docker run --rm -it -v `pwd`/example_files/chall7.txt:/crackme.txt adamoss/john-the-ripper /crackme.txt
 ```
 
 ### Nikto
