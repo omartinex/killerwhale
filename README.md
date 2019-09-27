@@ -31,7 +31,7 @@ docker run --rm -it instrumentisto/nmap -A -T4 scanme.nmap.org --open
 ### The Harvester
 
 ```console
-docker pull andersballegaard/theharvester  
+docker pull andersballegaard/theharvester
 
 docker run -it andersballegaard/theharvester -b google -d uniminuto.edu
 ```
@@ -49,7 +49,7 @@ docker run --rm -it -v `pwd`/example_files/chall7.txt:/crackme.txt adamoss/john-
 ```console
 docker pull frapsoft/nikto
 
-docker run frapsoft/nikto -host http://wiwa.uniminuto.edu:8501
+docker run frapsoft/nikto -host https://juice-shop.herokuapp.com/
 ```
 
 ### Metasploit
@@ -65,7 +65,7 @@ docker run --rm -it metasploitframework/metasploit-framework ./msfconsole
 ```console
 docker pull hypnza/dirbuster
 
-docker run --rm hypnza/dirbuster -u http://biblioteca.uniminuto.edu/
+docker run --rm hypnza/dirbuster -u https://juice-shop.herokuapp.com/
 ```
 
 ### Sqlmap
